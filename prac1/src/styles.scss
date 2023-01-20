@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "BarlowSemiCondensedRegular";
+    src: local("BarlowSemiCondensedRegular"), url("./assets/fonts/BarlowSemiCondensed-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "BarlowSemiCondensedExtraLight";
+    src: local("BarlowSemiCondensedExtraLight"), url("./assets/fonts/BarlowSemiCondensed-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "BarlowSemiCondensedLight";
+    src: local("BarlowSemiCondensedLight"), url("./assets/fonts/BarlowSemiCondensed-Light.ttf") format("truetype");
+}
