@@ -1,1 +1,10 @@
-<p>sidebar works!</p>
+<div class="sidebar_container" [class.collapsed]="collapsed">
+	<div class="sidebar_items">
+		<div class="button_group">
+			<button
+				(click)="toggleSidebar()">
+				<p>Toggle</p>
+			</button>
+		</div>
+	</div>
+</div>

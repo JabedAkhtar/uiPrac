@@ -1,1 +1,17 @@
-<p>navbar works!</p>
+<div class="navbar_container">
+	<div class="navbar_items">
+		<a class="brand_logo" href="#">
+			<img src="assets/images/brand_logo.png" height="30px" width="40px">
+		</a>
+		<div class="button_group">
+			<button
+				class="navbar_buttons"
+				*ngFor="let buttons of navbarButtons"
+				(click)="redirectTo()">
+				{{buttons}}
+			</button>
+		</div>
+		<button class="navbar_buttons rhs_button" style="margin-left: auto;">SignIn/SignUp
+		</button>
+	</div>
+</div>

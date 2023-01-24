@@ -1,0 +1,58 @@
+$filterWhiteToBlack: brightness(0) saturate(100%) invert(0%) sepia(96%) saturate(0%) hue-rotate(202deg) brightness(93%)
+	contrast(101%);
+
+.navbar_container {
+	background-color: #048b90;
+	width: 100%;
+	height: 50px;
+	display: block;
+	position: relative;
+	z-index: 2;
+}
+
+.navbar_items {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	padding: 4px;
+	& > a {
+		cursor: pointer;
+		padding: 4px;
+	}
+
+	& > a:hover {
+		border-radius: 90px;
+		background-color: #79e0e4;
+		transition: background-color 250ms;
+		opacity: 50%;
+
+		& > img {
+			filter: $filterWhiteToBlack;
+		}
+	}
+}
+
+.button_group {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 20px;
+	text-align: center;
+	justify-content: center;
+}
+
+.navbar_buttons {
+	color: whitesmoke;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+}
+
+.navbar_buttons:hover {
+	color: black;
+	background-color: #79e0e4;
+	border-radius: 4px;
+	transition: background-color 250ms;
+	opacity: 50%;
+}
